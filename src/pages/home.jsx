@@ -1,11 +1,13 @@
 import React from 'react'
 
-const home = () => {
+const Home = () => {
   return (
     <div>
-      Home Page
+      <h1>Bem Vindo a Loja Bear Beer</h1>
+      <p>Acesse nosso catalogo de Cervejas</p>
+      <a href="/beers-catalog"></a>
     </div>
   )
 }
 
-export default home
+export default Home
