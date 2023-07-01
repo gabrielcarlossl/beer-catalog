@@ -1,9 +1,10 @@
 import React from 'react'
+import '../assets/styles/catalog.styles.css'
 
 const Catalog = () => {
   return (
-    <div>
-      <h1>catalogo</h1>
+    <div className='catalogContainer'>
+      <h1>Catálogo de Cervejas</h1>
     </div>
   )
 }
