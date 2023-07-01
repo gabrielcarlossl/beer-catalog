@@ -16,6 +16,7 @@ const NavBar = () => {
         <div className='linkContainer'>
           <Link to='/'>Home Page</Link>
           <Link to='/beers-catalog'>Beer Catalog</Link>
+          <Link to='/about'>About</Link>
         </div>
       </div>
       <hr />
