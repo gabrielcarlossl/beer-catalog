@@ -2,7 +2,6 @@ import * as types from '../types/index'
 
 const initialState = {
   beers: [],
-  loading: false,
   error: null,
 }
 
@@ -18,13 +17,12 @@ const beerReducer = (state = initialState, action) => {
       return {
         ...state,
         beers: action.payload,
-        loading: false,
         error: null,
       }
     case types.FETCH_BEERS_FAILURE:
       return {
         ...state,
-        loading: false,
+        beers: [],
         error: action.payload,
       }
     default:
