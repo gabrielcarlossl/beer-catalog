@@ -16,8 +16,9 @@ const About = () => {
         <ul>
             <li>ReactJS</li>
             <li>Emotion</li>
+            <li>Material UI Icons</li>
             <li>Redux</li>
-            <li>Redux Saga</li>
+            <li>Redux Thunk</li>
             <li>Axios</li>
             <li>React Router Dom</li>
             <li>API - <a target='_blank' href="https://punkapi.com/documentation/v2">Punk API</a></li>
