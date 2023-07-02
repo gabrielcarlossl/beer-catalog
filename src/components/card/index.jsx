@@ -5,6 +5,7 @@ import { cardStyle, cardContent, VerMais, paginationStyle, arrows } from '../../
 import ArrowBackIosNewRoundedIcon from '@mui/icons-material/ArrowBackIosNewRounded'
 import ArrowForwardIosRoundedIcon from '@mui/icons-material/ArrowForwardIosRounded'
 import Modal from 'react-modal'
+import { modalStyle } from '../../assets/styles/modal.style.js'
 
 const Card = () => {
     const dispatch = useDispatch();
@@ -121,7 +122,7 @@ const Card = () => {
                     contentLabel="Detalhes da Cerveja"
                 >
                     {selectedBeer && (
-                        <div>
+                        <div className={modalStyle}>
                             <button onClick={closeModal}>Fechar</button>
                             <h2>{selectedBeer.name}</h2>
                             <p>Tagline: {selectedBeer.tagline}</p>
