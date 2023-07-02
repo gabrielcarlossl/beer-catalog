@@ -4,6 +4,7 @@ import { fetchBeers } from '../../redux/thunks/index.js'
 import { cardStyle, cardContent, VerMais, paginationStyle, arrows } from '../../assets/styles/card.style.js'
 import ArrowBackIosNewRoundedIcon from '@mui/icons-material/ArrowBackIosNewRounded'
 import ArrowForwardIosRoundedIcon from '@mui/icons-material/ArrowForwardIosRounded'
+import CloseIcon from '@mui/icons-material/Close'
 import Modal from 'react-modal'
 import { modalStyle } from '../../assets/styles/modal.style.js'
 
@@ -120,13 +121,17 @@ const Card = () => {
                     isOpen={modalIsOpen}
                     onRequestClose={closeModal}
                     contentLabel="Detalhes da Cerveja"
+                    style={modalStyle}
+                    className="custom-modal"
                 >
                     {selectedBeer && (
                         <div className={modalStyle}>
-                            <button onClick={closeModal}>Fechar</button>
-                            <h2>{selectedBeer.name}</h2>
-                            <p>Tagline: {selectedBeer.tagline}</p>
-                            <p>Description: {selectedBeer.description}</p>
+                            <CloseIcon fontSize='large' onClick={closeModal}></CloseIcon>
+                            <div>
+                                <h2>Nome: <span>{selectedBeer.name}</span></h2>
+                                <p>Tagline: <span>{selectedBeer.tagline}</span></p>
+                            </div>
+                            <p>Descrição:</p> <span>{selectedBeer.description}</span>
                             <img src={selectedBeer.image_url} alt={selectedBeer.name} />
                         </div>
                     )}
