@@ -7,14 +7,34 @@ import ArrowForwardIosRoundedIcon from '@mui/icons-material/ArrowForwardIosRound
 import Modal from 'react-modal'
 
 const Card = () => {
-    const dispatch = useDispatch()
+    const dispatch = useDispatch();
     const [currentPage, setCurrentPage] = useState(1)
-    const beersPerPage = 4
-
+    const [beersPerPage, setBeersPerPage] = useState(5)
     const beers = useSelector((state) => state.beers.beers)
-
     const [modalIsOpen, setModalIsOpen] = useState(false)
     const [selectedBeer, setSelectedBeer] = useState(null)
+
+    useEffect(() => {
+        dispatch(fetchBeers());
+    }, [dispatch])
+
+    useEffect(() => {
+        const handleResize = () => {
+            const screenWidth = window.innerWidth;
+            if (screenWidth <= 500) {
+                setBeersPerPage(1)
+            } else {
+                setBeersPerPage(5)
+            }
+        };
+
+        handleResize();
+        window.addEventListener('resize', handleResize)
+
+        return () => {
+            window.removeEventListener('resize', handleResize)
+        }
+    }, [])
 
     const openModal = (beer) => {
         setSelectedBeer(beer)
@@ -24,11 +44,6 @@ const Card = () => {
     const closeModal = () => {
         setModalIsOpen(false)
     }
-
-
-    useEffect(() => {
-        dispatch(fetchBeers())
-    }, [dispatch]);
 
     // Cálculo dos índices das cervejas a serem exibidas na página atual
     const indexOfLastBeer = currentPage * beersPerPage
