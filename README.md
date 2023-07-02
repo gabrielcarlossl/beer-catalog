@@ -12,11 +12,13 @@
 - PunkApi
 - Webpack
 
-### Run
+## Run Project
 
 `git clone https://github.com/gabrielcarlossl/beer-catalog.git`
 
 `npm install` 
 
 `npm run dev` 
+
+Acesse `http://localhost:3000/`
 
