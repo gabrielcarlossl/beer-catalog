@@ -12,6 +12,9 @@ export const style = css`
     font-weight: 600;
     margin-top: 50px;
     text-decoration: none;
+    @media (max-width: 500px) {
+      font-size: 20px;
+    }
   }
   h1 {
     color: #8119FF;
