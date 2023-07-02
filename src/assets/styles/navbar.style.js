@@ -9,8 +9,10 @@ export const container = css`
 `
 
 export const Hr = styled.hr`
-  border: 2px solid #5c3c27;
+  border: 2px solid #791FFF;
   box-shadow: 1px 3px 10px;
+  margin: 0;
+  padding: 0;
 `
 export const logoStyle = css`
   margin: 10px;
@@ -19,17 +21,27 @@ export const logoStyle = css`
 export const linkContainer = css`
   display: flex;
   gap: 20px;
+  @media (max-width: 500px) {
+    gap: 5px;
+  }
   a {
     text-decoration: none;
     margin: 10px;
     font-size: 24px;
     font-weight: 600;
-    color: black;
+    color: #9C19FF;
     padding: 10px;
     border-radius: 8px;
+    @media (max-width: 500px) {
+      font-size: 14px;
+      padding: 5px;
+      margin: 8px;
+      text-align: center;
+    }
   }
+  
   a:hover {
-    background-color: #5c3c27b2;
+    background-color: #EBE302;
   }
 `
 
