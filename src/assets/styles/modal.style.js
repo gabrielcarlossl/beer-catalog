@@ -10,8 +10,13 @@ export const modalStyle = css`
     align-items: center;
     padding: 20px;
     border-radius: 20px;
+    hr { 
+        width: 100%;
+        border: 2px solid black;
+        border-radius: 10px;
+    }
     img {
-        margin-top: 20px;
+        
         height: 270px;
     }
     p {
@@ -24,6 +29,13 @@ export const modalStyle = css`
     svg {
         align-self: flex-end;
         cursor: pointer;
+        padding: 5px;
+        :hover {
+            background-color: rgb(109,0,242, 0.3);
+            border-radius: 50%;
+            
+
+        }
     }
 
     @media (max-width: 600px) {
