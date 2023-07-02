@@ -22,6 +22,7 @@ const About = () => {
             <li>Axios</li>
             <li>React Router Dom</li>
             <li>API - <a target='_blank' href="https://punkapi.com/documentation/v2">Punk API</a></li>
+            <li>Deploy - Netlify</li>
         </ul>
     </div>
   )

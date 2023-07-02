@@ -9,7 +9,7 @@ import Modal from 'react-modal'
 const Card = () => {
     const dispatch = useDispatch();
     const [currentPage, setCurrentPage] = useState(1)
-    const [beersPerPage, setBeersPerPage] = useState(5)
+    const [beersPerPage, setBeersPerPage] = useState(4)
     const beers = useSelector((state) => state.beers.beers)
     const [modalIsOpen, setModalIsOpen] = useState(false)
     const [selectedBeer, setSelectedBeer] = useState(null)
@@ -24,7 +24,7 @@ const Card = () => {
             if (screenWidth <= 500) {
                 setBeersPerPage(1)
             } else {
-                setBeersPerPage(5)
+                setBeersPerPage(4)
             }
         };
 
