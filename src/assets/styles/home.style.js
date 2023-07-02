@@ -3,12 +3,18 @@ import { css } from '@emotion/css'
 export const style = css`
   display: flex;
   flex-direction: column;
-  margin-top: 25px;
+  margin-top: 50px;
   text-align: center;
+  height: 90vh;
   a {
-    font-size: 24px;
-    text-decoration: none;
     color: #5c3c27;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 50px;
+    text-decoration: none;
+  }
+  h1 {
+    color: #8119FF;
   }
   a:hover {
     text-decoration: underline;
