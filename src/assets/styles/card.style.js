@@ -50,6 +50,7 @@ export const SelectButton = styled.button`
 `
 export const paginationStyle = css`
   margin-top: 30px;
+  margin-bottom: 20px;
   display: flex;
   justify-content: center;
   button {
