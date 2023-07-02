@@ -17,6 +17,7 @@ const About = () => {
             <li>ReactJS</li>
             <li>Emotion</li>
             <li>Material UI Icons</li>
+            <li>React Modal</li>
             <li>Redux</li>
             <li>Redux Thunk</li>
             <li>Axios</li>
