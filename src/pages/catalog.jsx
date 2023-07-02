@@ -9,7 +9,7 @@ const Catalog = () => {
   return (
     <div className={catalogContainer}>
       <h1>Catálogo de Cervejas<SportsBarRoundedIcon fontSize='large'></SportsBarRoundedIcon></h1>
-      <div>
+      <div className='cardSection'>
         <Card></Card>
       </div>
     </div>

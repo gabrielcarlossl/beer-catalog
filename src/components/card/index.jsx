@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchBeers } from '../../redux/thunks/index.js'
-import { cardStyle, cardContent, VerMais, paginationStyle, arrows } from '../../assets/styles/card.style.js'
+import { cardStyle, cardContent, paginationStyle, arrows, SelectButton } from '../../assets/styles/card.style.js'
 import ArrowBackIosNewRoundedIcon from '@mui/icons-material/ArrowBackIosNewRounded'
 import ArrowForwardIosRoundedIcon from '@mui/icons-material/ArrowForwardIosRounded'
 import CloseIcon from '@mui/icons-material/Close'
@@ -114,7 +114,7 @@ const Card = () => {
                         <h3>{beer.name}</h3>
                         <img src={beer.image_url} alt={beer.name} />
                         <p>Teor alcoólico: {beer.abv}%</p>
-                        <VerMais onClick={() => openModal(beer)}>Selecionar</VerMais>
+                        <SelectButton onClick={() => openModal(beer)}>Selecionar</SelectButton>
                     </div>
                 ))}
                 <Modal
@@ -131,8 +131,11 @@ const Card = () => {
                                 <h2>Nome: <span>{selectedBeer.name}</span></h2>
                                 <p>Tagline: <span>{selectedBeer.tagline}</span></p>
                             </div>
+                            <hr style={{ marginTop: 20, marginBottom: 20}} />
                             <p>Descrição:</p> <span>{selectedBeer.description}</span>
+                            <hr style={{ marginTop: 20, marginBottom: 20}} />
                             <img src={selectedBeer.image_url} alt={selectedBeer.name} />
+                            <hr />
                         </div>
                     )}
                 </Modal>
