@@ -33,7 +33,7 @@ export const cardContent = css`
   }
 `
 
-export const VerMais = styled.button`
+export const SelectButton = styled.button`
   background-color: #8019FF;
   border-radius: 8px;
   border: none;
