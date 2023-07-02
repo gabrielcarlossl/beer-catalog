@@ -1,9 +1,10 @@
 import React from 'react'
-import '../assets/styles/about.styles.css'
+import '../assets/styles/about.style.js'
+import { aboutContainer } from '../assets/styles/about.style.js'
 
 const About = () => {
   return (
-    <div className='aboutContainer'>
+    <div className={aboutContainer}>
       <h1>Sobre</h1>
         <h2>Desenvolvedor:</h2>
         <p>Gabriel Carlos da Silva Leite</p>
@@ -14,8 +15,10 @@ const About = () => {
         <h2>Tecnologias Utilizadas:</h2>
         <ul>
             <li>ReactJS</li>
+            <li>Emotion</li>
+            <li>Material UI Icons</li>
             <li>Redux</li>
-            <li>Redux Saga</li>
+            <li>Redux Thunk</li>
             <li>Axios</li>
             <li>React Router Dom</li>
             <li>API - <a target='_blank' href="https://punkapi.com/documentation/v2">Punk API</a></li>
