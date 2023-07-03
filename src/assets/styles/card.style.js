@@ -15,7 +15,7 @@ export const cardStyle = css`
 
 export const cardContent = css`
   align-items: center;
-  background-color: rgb(109,0,242, 0.2);
+  background-color: #1FA5F0;
   border: 2px solid black;
   border-radius: 5px;
   display: flex;
@@ -34,10 +34,10 @@ export const cardContent = css`
 `
 
 export const SelectButton = styled.button`
-  background-color: #8019FF;
+  background-color: #F0951F;
   border-radius: 8px;
   border: none;
-  color: white;
+  color: black;
   cursor: pointer;
   font-size: 14px;
   font-weight: 600;
@@ -45,7 +45,7 @@ export const SelectButton = styled.button`
   padding: 10px;
   :hover {
     color: black;
-    background-color: #FEC324;
+    background-color: #FFAA3B;
   }
 `
 export const paginationStyle = css`
@@ -61,7 +61,7 @@ export const paginationStyle = css`
     font-weight: 600;
     border: none;
     border-radius: 8px;
-    
+    background-color: #F0951F;
     :hover {
       background-color: #FEC324;
     }
