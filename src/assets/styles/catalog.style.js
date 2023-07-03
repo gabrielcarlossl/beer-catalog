@@ -4,8 +4,7 @@ export const catalogContainer = css`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #76CFA5;
-  height: 100vh;
+  
   h1 {
     font-weight: 800;
     font-size: 64px;

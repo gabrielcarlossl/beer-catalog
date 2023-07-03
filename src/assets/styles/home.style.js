@@ -4,15 +4,15 @@ export const style = css`
   display: flex;
   flex-direction: column;
   text-align: center;
-  height: 100vh;
   overflow-y: hidden;
   background-color: #76CFA5;
   align-items: center;
   .bear{
-    width: 500px;
-    margin-top: 50px;
-    border-radius: 40px;
     border: 2px solid #5C4525;
+    border-radius: 40px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    width: 500px;
     @media (max-width: 500px) {
       width: 350px;
       margin-top: 20px;
