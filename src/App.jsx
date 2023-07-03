@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import React from 'react'
 import NavBar from './components/navbar'
 import Home from './pages/home'
 import Catalog from './pages/catalog'
