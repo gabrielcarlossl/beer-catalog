@@ -4,12 +4,18 @@ import styled from '@emotion/styled'
 export const modalStyle = css`
     margin: 50px auto;
     width: 500px;
-    background-color: #EFEFEF;
+    background-color: #89CFF0;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
     border-radius: 20px;
+    h2{
+        @media (max-width: 500px) {
+            margin-top: 0%;
+            padding-top: 0;
+        }
+    }
     hr { 
         width: 100%;
         border: 2px solid black;
@@ -20,6 +26,11 @@ export const modalStyle = css`
         height: 270px;
     }
     p {
+        @media (max-width: 500px) {
+            margin: 0;
+            padding-top: 0;
+
+        }
         font-weight: bold;
     }
     span{
@@ -31,7 +42,7 @@ export const modalStyle = css`
         cursor: pointer;
         padding: 5px;
         :hover {
-            background-color: rgb(109,0,242, 0.3);
+            background-color: #1FA5F0;
             border-radius: 50%;
             
 

@@ -8,7 +8,7 @@ export const cardStyle = css`
   width: 70vw;
   justify-content: center;
   img {
-    width: 70px;
+    width: 60px;
     height: 140px;
   }
 `
