@@ -16,7 +16,7 @@ export const cardStyle = css`
 export const cardContent = css`
   align-items: center;
   background-color: #1FA5F0;
-  border: 2px solid black;
+  border: 2px solid #5C3C27;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
