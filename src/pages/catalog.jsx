@@ -8,8 +8,8 @@ const Catalog = () => {
 
   return (
     <div className={catalogContainer}>
-      <h1>Catálogo de Cervejas<SportsBarRoundedIcon fontSize='large'></SportsBarRoundedIcon></h1>
-      <div className='cardSection'>
+      <h1>Catalog<SportsBarRoundedIcon fontSize='large'></SportsBarRoundedIcon></h1>
+      <div>
         <Card></Card>
       </div>
     </div>

@@ -113,8 +113,8 @@ const Card = () => {
                     <div className={cardContent} key={beer.id}>
                         <h3>{beer.name}</h3>
                         <img src={beer.image_url} alt={beer.name} />
-                        <p>Teor alcoólico: {beer.abv}%</p>
-                        <SelectButton onClick={() => openModal(beer)}>Selecionar</SelectButton>
+                        <p>Alcohol percentage: {beer.abv}%</p>
+                        <SelectButton onClick={() => openModal(beer)}>Select</SelectButton>
                     </div>
                 ))}
                 <Modal
@@ -128,11 +128,11 @@ const Card = () => {
                         <div className={modalStyle}>
                             <CloseIcon fontSize='large' onClick={closeModal}></CloseIcon>
                             <div>
-                                <h2>Nome: <span>{selectedBeer.name}</span></h2>
+                                <h2>Name: <span>{selectedBeer.name}</span></h2>
                                 <p>Tagline: <span>{selectedBeer.tagline}</span></p>
                             </div>
                             <hr style={{ marginTop: 20, marginBottom: 20}} />
-                            <p>Descrição:</p> <span>{selectedBeer.description}</span>
+                            <p>Description:</p> <span>{selectedBeer.description}</span>
                             <hr style={{ marginTop: 20, marginBottom: 20}} />
                             <img src={selectedBeer.image_url} alt={selectedBeer.name} />
                             <hr />

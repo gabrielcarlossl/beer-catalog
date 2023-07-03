@@ -9,9 +9,10 @@ const NavBar = () => {
 
     <nav>
       <div className={container}>
-        <div>
+        <div className='logo'>
           <Link to='/'>
             <img className={logoStyle} src={logo} width={90} alt="student" />
+            <p>Bear Beer</p>
           </Link>
         </div>
         <div className={linkContainer}>
