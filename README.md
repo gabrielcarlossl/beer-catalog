@@ -11,6 +11,7 @@
 - React Router Dom
 - PunkApi
 - Webpack
+- Jest
 
 ## Run Project
 
