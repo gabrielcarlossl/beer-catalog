@@ -21,7 +21,7 @@ export const container = css`
       padding:0;
       text-align: center;
       font-size: 24px;
-      margin-left: 10px;
+      margin-right: 20px;
       font-weight: 900;
       color: #5C4527;
     }
@@ -35,7 +35,7 @@ export const container = css`
 
 
 export const logoStyle = css`
-  margin: 10px;
+  margin: 10px 0px 10px 10px;
   width: 60px;
 `
 
@@ -55,11 +55,14 @@ export const linkContainer = css`
     padding: 8px;
     border-radius: 8px;
     @media (max-width: 500px) {
-      font-size: 14px;
+      font-size: 18px;
       padding: 5px;
       margin: 8px;
       text-align: center;
     }
+  }
+  a:last-child {
+    align-self: center;
   }
   
   a:hover {
