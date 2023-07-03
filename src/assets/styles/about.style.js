@@ -9,4 +9,7 @@ export const aboutContainer = css`
   ul {
     text-align: left;
   }
+  a {
+    color: black;
+  }
 `
